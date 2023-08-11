@@ -1,0 +1,50 @@
+[
+    {
+        "id": "acond",
+        "titulo": "Acondicionador",
+        "imagen": ".../imagenes.acondicionadoreco.webp",
+        "precio": 1000
+    },
+    {
+        "id": "botella",
+        "titulo": "Botella",
+        "imagen": "",
+        "precio": 2000
+    },
+    {
+        "id": "esponja",
+        "titulo": "Esponja",
+        "imagen": "./img/abrigos/03.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "maceta",
+        "titulo": "Maceta",
+        "imagen": "./img/abrigos/04.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "pelo",
+        "titulo": "Cepillo de pelo",
+        "imagen": "./img/abrigos/05.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "deter",
+        "titulo": "Detergente",
+        "imagen": "./img/camisetas/01.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "diente",
+        "titulo": "Cepillo de dientes",
+        "imagen": "./img/camisetas/02.jpg",
+        "precio": 1000
+    },
+    {
+        "id": "manoplas",
+        "titulo": "Manoplas",
+        "imagen": "./img/camisetas/03.jpg",
+        "precio": 1000
+    }
+]

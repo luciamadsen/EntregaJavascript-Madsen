@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Tienda Ecoify</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+
+	</head>
+	<body>
+		<header class="fixed-header">
+			<h1>Ecoify - Tienda sustentable</h1>
+
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Acondicionador</p>
+								<span class="precio-producto-carrito">$800</span>
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+							</svg>
+						</div>
+					</div>
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$0</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+			
+		</header>
+		<div class="container-items">
+
+			<h2>Somos ECOIFY, una tienda que ofrece alternativas sustentables. Haz click en las imagenes para saber más sobre el producto.</h2> 
+			
+			
+			<div class="item" id="acond">
+				<figure>
+					<a href="pages/acond.html">
+						<img src="imagenes/acondicionadoreco.webp" alt="acondicionadoreco"/>
+					</a>
+				</figure>
+				<div class="info-product">
+					<h2>Acondicionador</h2>
+					<p class="price">$1000</p>
+					<button class="btn-add-cart">Agregar al carrito</button>
+				</div>
+			</div>
+			<div class="item" id="botella">
+				<figure>
+					<a href="pages/botella.html">
+					<img src="imagenes/botellaeco.webp" alt="botellaeco" /></a>
+				</figure>
+				<div class="info-product">
+					<h2>Botella</h2>
+					<p class="price">$2000</p>
+					<button class="btn-add-cart">Agregar al carrito</button>
+				</div>
+			</div>
+			<div class="item" id="esponja">
+				<figure>
+					<a href="pages/esponja.html">
+					<img src="imagenes/esponjaeco.webp" alt="esponjaeco" /></a>
+				</figure>
+				<div class="info-product">
+					<h2>Esponja</h2>
+					<p class="price">$500</p>
+					<button class="btn-add-cart">Agregar al carrito</button>
+				</div>
+			</div>
+			<div class="item" id="maceta">
+				<figure>
+					<a href="pages/maceta.html">
+					<img src="imagenes/macetaeco.webp" alt="macetaeco"/></a>
+				</figure>
+				<div class="info-product">
+					<h2>Maceta</h2>
+					<p class="price">$900</p>
+					<button class="btn-add-cart">Agregar al carrito</button>
+				</div>
+			</div>
+			<div class="item" id="pelo">
+				<figure>
+					<a href="pages/cepillo.html">
+					<img src="imagenes/peloeco.webp" alt="peloeco"/></a>
+				</figure>
+				<div class="info-product">
+					<h2>Cepillo</h2>
+					<p class="price">$380</p>
+					<button class="btn-add-cart">Agregar al carrito</button>
+				</div>
+			</div>
+			<div class="item" id="deter">
+				<figure>
+					<a href="pages/detergente.html">
+					<img src="imagenes/detergenteeco.webp" alt="detergente"/></a>
+				</figure>
+				<div class="info-product">
+					<h2>Detergente</h2>
+					<p class="price">$550</p>
+					<button class="btn-add-cart">Agregar al carrito</button>
+				</div>
+			</div>
+			<div class="item" id="diente">
+				<figure>
+					<a href="pages/dientes.html">
+					<img src="imagenes/cepilloeco.webp" alt="cepillo"/></a>
+				</figure>
+				<div class="info-product">
+					<h2>Cepillo de dientes</h2>
+					<p class="price">$440</p>
+					<button class="btn-add-cart">Agregar al carrito</button>
+				</div>
+			</div>
+			<div class="item" id="manoplas">
+				<figure>
+					<a href="pages/manoplas.html">
+					<img src="imagenes/manoplaeco.webp" alt="manopla"/></a>
+				</figure>
+				<div class="info-product">
+					<h2>Manoplas</h2>
+					<p class="price">$700</p>
+					<button class="btn-add-cart">Agregar al carrito</button>
+				</div>
+			</div>
+		</div>
+
+		
+
+		<script src="main.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="sweetalert.js"></script>
+
+
+
+
+	</body>
+</html>
